@@ -13,6 +13,7 @@
 		E47AA0191D9BA9BA00D6DB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47AA0171D9BA9BA00D6DB0A /* Main.storyboard */; };
 		E47AA01B1D9BA9BA00D6DB0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47AA01A1D9BA9BA00D6DB0A /* Assets.xcassets */; };
 		E47AA01E1D9BA9BA00D6DB0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47AA01C1D9BA9BA00D6DB0A /* LaunchScreen.storyboard */; };
+		E4AC20941D9EAC7C00607F91 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AC20931D9EAC7C00607F91 /* GCDAsyncSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E47AA01A1D9BA9BA00D6DB0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E47AA01D1D9BA9BA00D6DB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E47AA01F1D9BA9BA00D6DB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4AC20921D9EAC7C00607F91 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		E4AC20931D9EAC7C00607F91 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		E47AA00D1D9BA9BA00D6DB0A /* 小聊天室 */ = {
 			isa = PBXGroup;
 			children = (
+				E4AC20921D9EAC7C00607F91 /* GCDAsyncSocket.h */,
+				E4AC20931D9EAC7C00607F91 /* GCDAsyncSocket.m */,
 				E47AA0111D9BA9BA00D6DB0A /* AppDelegate.h */,
 				E47AA0121D9BA9BA00D6DB0A /* AppDelegate.m */,
 				E47AA0141D9BA9BA00D6DB0A /* ViewController.h */,
@@ -105,11 +110,12 @@
 		E47AA0031D9BA9BA00D6DB0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = HLL;
 				TargetAttributes = {
 					E47AA00A1D9BA9BA00D6DB0A = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = D8X45N6Y73;
 					};
 				};
 			};
@@ -149,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4AC20941D9EAC7C00607F91 /* GCDAsyncSocket.m in Sources */,
 				E47AA0161D9BA9BA00D6DB0A /* ViewController.m in Sources */,
 				E47AA0131D9BA9BA00D6DB0A /* AppDelegate.m in Sources */,
 				E47AA0101D9BA9BA00D6DB0A /* main.m in Sources */,
@@ -191,8 +198,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -236,8 +245,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -265,7 +276,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D8X45N6Y73;
 				INFOPLIST_FILE = "小聊天室/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HLL.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D8X45N6Y73;
 				INFOPLIST_FILE = "小聊天室/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HLL.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +317,7 @@
 				E47AA0241D9BA9BA00D6DB0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
